@@ -1,0 +1,191 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+:root {
+    scroll-behavior: smooth;
+}
+
+$clr-black: #1c1c1c;
+$clr-white: #ececec;
+$clr-orange: #ffa61d;
+$clr-blue: #229ea7;
+$clr-grey: #9a8195;
+
+/* variable de texto */
+$font-title: "Poppins", sans-serif;
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style-type: none;
+}
+body {
+    font-family: $font-title;
+    transition: 0.4s;
+}
+section {
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+}
+.dark-mode {
+    color: $clr-white;
+    background-color: $clr-black;
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-inline: 2rem;
+}
+header {
+    z-index: 1;
+    backdrop-filter: blur(20px);
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* aplica padding a todo, excepto al borde inferior */
+    padding: 2rem;
+    padding-bottom: 0;
+
+    .logo {
+        max-width: 2rem;
+    }
+    .nav-list {
+        display: flex;
+        gap: 1rem;
+        .nav-item {
+            .nav-link {
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 100%;
+                    height: 2px;
+                    background-color: $clr-grey;
+                    transition: 0.2s;
+                }
+                &:hover::after {
+                    width: 100%;
+                }
+            }
+            .toggle-container {
+                width: 20px;
+                height: 20px;
+                border-radius: 8px;
+                .toggle-btn {
+                    cursor: pointer;
+                    & span:hover{
+                        color: $clr-blue;
+                        
+                    }
+                }
+            }
+        }
+    }
+    .menu{
+        position: relative;
+        display: none;
+        &-icon{
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+}
+
+.quien-soy-inner {
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+    grid-template-rows: 0.2fr 1fr;
+    grid-template-areas:
+        "foto titulo"
+        "foto texto";
+    .quien-soy-img {
+        grid-area: foto;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 80%;
+            border-radius: 40%;
+            background-color: $clr-grey;
+        }
+    }
+    .titulo {
+        grid-area: titulo;
+        padding: 2rem;
+        text-align: center;
+        top: 50%;
+    }
+    .texto {
+        grid-area: texto;
+        padding: 2rem;
+        display: flex;
+        align-items: center;
+    }
+}
+/* SECTION PROYECTOS */
+.flex-galery {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+    .flex-card {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* SECTION TECNOLOGIAS */
+.tecnologias-inner {
+    width: 100%;
+    overflow: hidden;
+    .carousel {
+        display: flex;
+        overflow: hidden;
+        justify-content: space-between;
+        width: max-content; //los items se alinean sin saltos
+        animation: scroll 15s linear infinite;
+        animation-play-state: running;
+
+        .carousel-item {
+            min-width: 150px;
+            height: 150px;
+            margin: 0 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover {
+                background: radial-gradient(
+                    circle,
+                    rgba(34, 158, 167, 0.2),
+                    rgba(0, 0, 0, 0) 75%
+                );
+            }
+        }
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
