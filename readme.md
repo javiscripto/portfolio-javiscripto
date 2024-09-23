@@ -1,7 +1,8 @@
 # PORTAFOLIO WEB
 
 1. [descripción](#descripción)
-2. [dependencias](#principales-dependencias-utilizadas)
+2. [dependencias](#principales)
+3. [tecnologias utilizadas](#tecnologias)
 
 ## descripción
 
@@ -11,5 +12,10 @@ Por esta razon, se incluye un script hecho en python que me sirvió para poder d
 
 ## dependencias
 
-Para el desarrollo se utilizó venv y  livereload de python para visualizar los cambios en tiempo real, y sass como preprocesador de css.
-Para efecto de revelado al momento de realizar scroll se utilizó scrollReveal. 
+Para el desarrollo se utilizó venv y livereload de python para visualizar los cambios en tiempo real, y sass como preprocesador de css.
+Para efecto de revelado al momento de realizar scroll se utilizó scrollReveal.
+
+## tecnologias
+
+Este proyecto fue realizado unicamente con html, css y javascript. Prescindí del uso de otro framework porque, creo, no se justifica para el tamaño del proyecto.
+El dominio de otras tecnologias puede verse en la seccion de proyectos.
