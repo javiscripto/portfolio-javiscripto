@@ -13,7 +13,7 @@ Por esta razon, se incluye un script hecho en python que me sirvió para poder d
 ## dependencias
 
 Para el desarrollo se utilizó venv y livereload de python para visualizar los cambios en tiempo real, y sass como preprocesador de css.
-Para efecto de revelado al momento de realizar scroll se utilizó scrollReveal.
+Para efecto de revelado al momento de realizar scroll se utilizó [scrollReveal](https://scrollrevealjs.org/).
 
 ## tecnologias
 
