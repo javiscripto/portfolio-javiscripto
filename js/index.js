@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
     // manejador de tema oscuro-claro
     const body = document.getElementById("body");
+    //toogle para cambiar fondo de contenedor carousel
+    const tecnologiasInner = document.querySelector('.tecnologias-inner');
     const toggleBtn = document.querySelector(".toggle-btn");
 
     const updateTheme = (isDarkMode) => {
@@ -9,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
             : '<span class="material-symbols-outlined">dark_mode</span>';
 
         body.classList.toggle("dark-mode", isDarkMode);
+        tecnologiasInner.classList.toggle("bg-dark");
         localStorage.setItem("theme", isDarkMode ? "dark" : "light");
     };
 
