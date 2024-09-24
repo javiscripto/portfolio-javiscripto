@@ -13,12 +13,18 @@
         />
         <!-- scroll reveal -->
         <script src="https://unpkg.com/scrollreveal"></script>
+        <!--animated css -->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      /> 
     </head>
     <body id="body">
-        <header>
+        <header>   
             <div class="logo">
-                <img src="./assets/tornillo.png" alt="logo" />
+                
             </div>
+         
             <nav class="nav-menu">
                 <ul class="nav-list">
                     <li class="nav-item">
@@ -46,13 +52,15 @@
         </header>
 
         <main>
-            <section id="sobre-mi">
+            
+
+            <section id="sobre-mi" class="animate__animated animate__backInLeft">
                 <div class="container">
                     <div class="quien-soy-inner">
                         <div class="quien-soy-img">
                             <img src="./assets/jav.png" alt="" />
                         </div>
-                        <h1 class="titulo">Fullstack web developer</h1>
+                        <h1 class="titulo animate__animated animate__fadeInDown">Fullstack web developer</h1>
                         <p class="texto">
                             Mi nombre es Javier Manqui. Soy una persona
                             apasionada, constante, proactiva, resolutiva,
@@ -66,14 +74,15 @@
                             egresado de dicho programa como desarollador
                             fullstack.
                         </p>
-                        <a download="curriculum" href="./docs/prueba.txt"
-                            >descargar mi cv</a
-                        >
+                    <div class="boton-descarga">
+                        <box-icon name='download'></box-icon>
+                        <a download="curriculum" href="./docs/prueba.txt">Descargar mi cv</a>
+                    </div>
                     </div>
                 </div>
             </section>
 
-            <section id="proyectos">
+            <section id="proyectos" >
                 <div class="container">
                     <div class="proyectos-inner">
                         <h2>Proyectos</h2>
@@ -84,8 +93,8 @@
                             interesantes:
                         </p>
 
+                        <div class="ligth-box"></div>
                         <div class="flex-galery">
-                            <div class="ligth-box"></div>
                             <div class="flex-card">
                                 <div class="flex-img"></div>
                                 <h3>frontend e-comerce</h3>
@@ -124,7 +133,7 @@
                             </div>
                             <div class="flex-card">
                                 <div class="grid-img"></div>
-                                <h3>aplicacion movile ecomerce</h3>
+                                <h3>aplicacion mobile ecomerce</h3>
                                 <p>
                                     Lorem ipsum dolor, sit amet consectetur
                                     adipisicing elit. Nesciunt eius odit aut
@@ -150,7 +159,7 @@
                     </div>
                 </div>
             </section>
-            <section id="tecnologias">
+            <section id="tecnologias" >
                 <div class="container">
                     <h2>Tecnologias</h2>
                     <div class="tecnologias-inner">
@@ -311,7 +320,7 @@
                 <!-- contendra un listado de iconos -->
             </section>
 
-            <section id="contacto">
+            <section id="contacto" >
                 <div class="container">
                     <div class="contacto-inner">
                         <h2>Contacto</h2>

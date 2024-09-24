@@ -35,6 +35,7 @@ section {
     padding-top: 4rem;
     padding-bottom: 3rem;
 }
+//
 .dark-mode {
     color: $clr-white;
     background-color: $clr-black;
@@ -45,6 +46,7 @@ section {
     padding-inline: 2rem;
 }
 header {
+    
     z-index: 1;
     backdrop-filter: blur(20px);
     position: sticky;
@@ -54,17 +56,18 @@ header {
     justify-content: space-between;
     align-items: center;
     /* aplica padding a todo, excepto al borde inferior */
-    padding: 2rem;
+    padding: 1.5rem;
     padding-bottom: 0;
 
     .logo {
-        max-width: 2rem;
+        max-width: 1rem;
     }
     .nav-list {
         display: flex;
         gap: 1rem;
         .nav-item {
             .nav-link {
+                text-transform: capitalize;
                 position: relative;
                 &::after {
                     content: "";
@@ -107,10 +110,40 @@ header {
 .quien-soy-inner {
     display: grid;
     grid-template-columns: 0.4fr 1fr;
-    grid-template-rows: 0.2fr 1fr;
+    grid-template-rows: 0.2fr 1fr 0.2fr;
     grid-template-areas:
         "foto titulo"
-        "foto texto";
+        "foto texto"
+        "boton texto";
+    .boton-descarga {
+        cursor: pointer;
+        width: 100%;
+        grid-area: boton;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: .5rem;
+        background-color: rgba($clr-grey, 0.1);
+        border-radius: 8px;
+        transition: 0.45s ease-in-out;
+        &:hover {
+            background-color: darken($clr-blue, 10%);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        a {
+            width: 100%;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            
+            
+            &:active {
+                transform: translateY(-1px);
+                color: $clr-orange;
+            }
+        }
+    }
     .quien-soy-img {
         grid-area: foto;
         height: 100%;

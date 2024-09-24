@@ -21,8 +21,23 @@ document.addEventListener("DOMContentLoaded", () => {
         updateTheme(isDarkMode);
     });
     
+    const downloadBtn = document.querySelector(".boton-descarga");
+
+    downloadBtn.addEventListener("click", () => {
+        downloadBtn.innerHTML = '<span class="material-symbols-outlined">download_done</span>';
+        // creo un nuevo objeto de audio
+        const sonidoCampana = new Audio('./assets/bell-98033.mp3');
+        
+        // reproduzco el sonido
+        sonidoCampana.play();
+        
+        // vuelve al contenido original
+        setTimeout(() => {
+            downloadBtn.innerHTML = '<box-icon name="download"></box-icon><a download="curriculum" href="./docs/prueba.txt">Descargar mi cv</a>';
+        }, 2000);
+    });
     
-    
+    //----------------------------------------------------------
     // evento sobre contenedor carousel
     const carouselContainer = document.querySelector('.carousel');
     

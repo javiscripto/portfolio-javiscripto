@@ -52,17 +52,18 @@ header {
   justify-content: space-between;
   align-items: center;
   /* aplica padding a todo, excepto al borde inferior */
-  padding: 2rem;
+  padding: 1.5rem;
   padding-bottom: 0;
 }
 header .logo {
-  max-width: 2rem;
+  max-width: 1rem;
 }
 header .nav-list {
   display: flex;
   gap: 1rem;
 }
 header .nav-list .nav-item .nav-link {
+  text-transform: capitalize;
   position: relative;
 }
 header .nav-list .nav-item .nav-link::after {
@@ -101,8 +102,34 @@ header .menu-icon {
 .quien-soy-inner {
   display: grid;
   grid-template-columns: 0.4fr 1fr;
-  grid-template-rows: 0.2fr 1fr;
-  grid-template-areas: "foto titulo" "foto texto";
+  grid-template-rows: 0.2fr 1fr 0.2fr;
+  grid-template-areas: "foto titulo" "foto texto" "boton texto";
+}
+.quien-soy-inner .boton-descarga {
+  cursor: pointer;
+  width: 100%;
+  grid-area: boton;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: rgba(154, 129, 149, 0.1);
+  border-radius: 8px;
+  transition: 0.45s ease-in-out;
+}
+.quien-soy-inner .boton-descarga:hover {
+  background-color: #19767d;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.quien-soy-inner .boton-descarga a {
+  width: 100%;
+  padding: 1rem 2rem;
+  text-decoration: none;
+}
+.quien-soy-inner .boton-descarga a:active {
+  transform: translateY(-1px);
+  color: #ffa61d;
 }
 .quien-soy-inner .quien-soy-img {
   grid-area: foto;
