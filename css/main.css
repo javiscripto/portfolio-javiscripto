@@ -142,7 +142,7 @@ header .menu-icon {
 .quien-soy-inner .quien-soy-img img {
   width: 80%;
   border-radius: 40%;
-  background-color: #9a8195;
+  background-color: #ffa61d;
 }
 .quien-soy-inner .titulo {
   grid-area: titulo;
@@ -178,17 +178,13 @@ header .menu-icon {
   width: 100%;
   overflow: hidden;
 }
-.tecnologias-inner::after {
+.tecnologias-inner::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  /*   background: linear-gradient(to right,
-                $clr-white 25%,
-                rgba(236, 236, 236, 0) 50%,
-                $clr-white 75%); */
 }
 .tecnologias-inner .carousel {
   display: flex;
@@ -207,7 +203,7 @@ header .menu-icon {
   align-items: center;
 }
 .tecnologias-inner .carousel .carousel-item:hover {
-  background: radial-gradient(circle, rgba(34, 158, 167, 0.2), rgba(0, 0, 0, 0) 75%);
+  background: radial-gradient(circle, rgba(34, 158, 167, 0.4), rgba(0, 0, 0, 0) 75%);
 }
 
 .bg-dark {
@@ -225,6 +221,22 @@ header .menu-icon {
     transform: translateX(-50%);
   }
 }
+.formulario-contacto {
+  width: 100%;
+}
+.formulario-contacto .campo-formulario {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.formulario-contacto .campo-formulario input {
+  width: 50%;
+}
+.formulario-contacto .campo-formulario textarea {
+  width: 50%;
+}
+
 .redes-container {
   position: fixed;
   left: 20px;
@@ -239,8 +251,8 @@ header .menu-icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   background-color: #ececec;
   border-radius: 50%;
   transition: background-color 0.3s ease;
@@ -254,7 +266,7 @@ header .menu-icon {
   fill: #1c1c1c;
 }
 .redes-container .icono-enlace:hover box-icon {
-  fill: #ececec;
+  fill: #ffa61d;
 }
 
 .footer {

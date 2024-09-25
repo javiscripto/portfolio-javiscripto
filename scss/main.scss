@@ -160,7 +160,7 @@ header {
         img {
             width: 80%;
             border-radius: 40%;
-            background-color: $clr-grey;
+            background-color: $clr-orange;
         }
     }
     .titulo {
@@ -196,17 +196,14 @@ header {
     position: relative;
     width: 100%;
     overflow: hidden;
-    &::after{
+    &::before{
         content: "";
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-      /*   background: linear-gradient(to right,
-                    $clr-white 25%,
-                    rgba(236, 236, 236, 0) 50%,
-                    $clr-white 75%); */
+       
    
         
     }
@@ -228,7 +225,7 @@ header {
             &:hover {
                 background: radial-gradient(
                     circle,
-                    rgba(34, 158, 167, 0.2),
+                    rgba(34, 158, 167, 0.4),
                     rgba(0, 0, 0, 0) 75%
                 );
             }
@@ -252,6 +249,25 @@ header {
     }
 }
 
+
+.formulario-contacto{
+    width: 100%;
+    .campo-formulario{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        input{
+            width: 50%;
+        }
+        textarea{
+            width: 50%;
+        }
+    }
+}
+
+
+
 .redes-container {
     position: fixed;
     left: 20px;
@@ -266,8 +282,8 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         background-color: $clr-white;
         border-radius: 50%;
         transition: background-color 0.3s ease;
@@ -283,7 +299,7 @@ header {
         }
 
         &:hover box-icon {
-            fill: $clr-white;
+            fill: $clr-orange;
         }
     }
 }
