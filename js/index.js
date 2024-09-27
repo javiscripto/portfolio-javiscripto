@@ -55,4 +55,20 @@ document.addEventListener("DOMContentLoaded", () => {
         carouselContainer.style.animationPlayState = 'running'; // Reactiva la animación original
     });
 
+    //---------evento barra de progreso-------------------------------------------------
+
+
+    window.addEventListener("scroll", () => {
+
+        const scrollPosition = window.scrollY;
+
+        const progressBar = document.getElementById("progress-bar");
+
+        const totalHeight = document.body.scrollHeight - window.innerHeight;
+
+        const progress = (scrollPosition / totalHeight) * 100;
+        
+        progressBar.value = progress;
+    });
+
 });

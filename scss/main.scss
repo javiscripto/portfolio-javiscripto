@@ -152,6 +152,29 @@ header {
     }
 }
 
+#progress-bar {
+    position: absolute;
+    appearance: none;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    border: none;
+    background-color: transparent;
+
+    &::-webkit-progress-bar {
+        background-color: transparent;
+    }
+
+    &::-webkit-progress-value {
+        background-color: $clr-orange;
+    }
+
+    &::-moz-progress-bar {
+        background-color: $clr-orange;
+    }
+}
+
 .quien-soy-inner {
     display: grid;
     grid-template-columns: 0.4fr 1fr;
