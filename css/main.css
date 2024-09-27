@@ -106,43 +106,58 @@ header .menu-icon {
   grid-template-rows: 0.2fr 1fr 0.2fr;
   grid-template-areas: "foto titulo" "foto texto" "boton texto";
 }
-.quien-soy-inner .boton-descarga {
+.quien-soy-inner .btn {
+  appearance: none;
+  display: inline-flex;
   cursor: pointer;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #229ea7;
+  color: inherit;
+  border: none;
+  border-radius: 8px;
   width: 100%;
-  grid-area: boton;
-  display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.5rem;
   background-color: rgba(154, 129, 149, 0.1);
-  border-radius: 8px;
   transition: 0.45s ease-in-out;
 }
-.quien-soy-inner .boton-descarga:hover {
+.quien-soy-inner .btn:hover {
   background-color: #19767d;
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
-.quien-soy-inner .boton-descarga a {
+.quien-soy-inner .btn a {
   width: 100%;
   padding: 1rem 2rem;
   text-decoration: none;
 }
-.quien-soy-inner .boton-descarga a:active {
+.quien-soy-inner .btn a:active {
   transform: translateY(-1px);
   color: #ffa61d;
 }
 .quien-soy-inner .quien-soy-img {
   grid-area: foto;
+  position: relative;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.quien-soy-inner .quien-soy-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 10%;
+  width: 80%;
+  height: 90%;
+  background-color: #ffa61d;
+  border-radius: 32px;
+  z-index: -1;
+}
 .quien-soy-inner .quien-soy-img img {
   width: 80%;
-  border-radius: 40%;
-  background-color: #ffa61d;
+  border-radius: 1%;
 }
 .quien-soy-inner .titulo {
   grid-area: titulo;
@@ -161,7 +176,6 @@ header .menu-icon {
 .flex-galery {
   display: flex;
   align-items: center;
-  /* justify-content: center; */
   flex-wrap: wrap;
   gap: 2rem;
   padding: 2rem;
@@ -206,13 +220,12 @@ header .menu-icon {
   background: radial-gradient(circle, rgba(34, 158, 167, 0.4), rgba(0, 0, 0, 0) 75%);
 }
 
-.bg-dark {
-  position: relative;
-}
-.bg-dark::after {
-  background: linear-gradient(to right, #1c1c1c 10%, rgba(0, 0, 0, 0) 50%, #1c1c1c 90%);
-}
-
+/* .bg-dark {
+    position: relative;
+    &::after{
+        background: linear-gradient(to right, $clr-black 10%, rgba(0, 0, 0, 0) 50%, $clr-black 90%);
+    }
+} */
 @keyframes scroll {
   0% {
     transform: translateX(0%);
@@ -223,18 +236,49 @@ header .menu-icon {
 }
 .formulario-contacto {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 2rem;
 }
 .formulario-contacto .campo-formulario {
   width: 100%;
   display: flex;
+  gap: 1rem;
   flex-direction: column;
   justify-content: space-between;
 }
 .formulario-contacto .campo-formulario input {
   width: 50%;
+  height: 2rem;
+  border-radius: 0.5rem;
 }
 .formulario-contacto .campo-formulario textarea {
   width: 50%;
+  appearance: none;
+  border-radius: 0.5rem;
+}
+.formulario-contacto .form-btn {
+  appearance: none;
+  display: inline-flex;
+  cursor: pointer;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #229ea7;
+  color: inherit;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(154, 129, 149, 0.1);
+  transition: 0.45s ease-in-out;
+  width: 10%;
+}
+.formulario-contacto .form-btn:hover {
+  background-color: #19767d;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .redes-container {
