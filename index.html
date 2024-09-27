@@ -74,7 +74,7 @@
                         egresado de dicho programa como desarollador
                         fullstack.
                     </p>
-                    <div class="boton-descarga">
+                    <div class="btn boton-descarga"">
                         <box-icon name='download'></box-icon>
                         <a download="curriculum" href="./docs/documento.txt">Descargar mi cv</a>
                     </div>
@@ -297,14 +297,14 @@
                 
                     <h2>Contacto</h2>
                 
-                <form class="formulario-contacto">
+                <form class="formulario-contacto" id="formulario-contacto">
                     <div class="campo-formulario">
                         <label for="nombre">Nombre:</label>
                         <input type="text" id="nombre" name="nombre" required />
                     </div>
                     <div class="campo-formulario">
                         <label for="email">Correo electrónico:</label>
-                        <input type="email" id="email" name="email" required />
+                        <input type="email" id="email" name="correo" required />
                     </div>
                     <div class="campo-formulario">
                         <label for="asunto">Asunto:</label>
@@ -314,7 +314,7 @@
                         <label for="mensaje">Mensaje:</label>
                         <textarea id="mensaje" name="mensaje" rows="4"  required></textarea>
                     </div>
-                    <button type="submit" class="boton-enviar">
+                    <button class="form-btn" type="submit">
                         Enviar mensaje
                     </button>
                 </form>
@@ -348,6 +348,8 @@
     <script src="./js/index.js"></script>
     <!-- scroll reveal -->
     <script src="./js/scrollReveal.js"></script>
+    <!-- formulario de contacto -->
+    <script src="./js/submit.js"></script>
 </body>
 
 </html>
