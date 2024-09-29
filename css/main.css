@@ -13,6 +13,26 @@
 }
 
 /* variable de texto */
+@media (max-width: 375px) {
+  .nav-list {
+    display: none !important;
+  }
+  .campo-formulario input, textarea {
+    width: 100% !important;
+  }
+  .form-btn {
+    width: 50% !important;
+    background-color: #229ea7 !important;
+  }
+  .quien-soy-inner {
+    grid-template-columns: 1fr 2fr 1fr !important;
+    grid-template-rows: 0.5fr 0.5fr 1fr 1fr !important;
+    grid-template-areas: " . foto .          " "titulo   titulo titulo" " texto texto texto" "texto texto texto" !important;
+  }
+  .quien-soy-inner .btn {
+    display: none !important;
+  }
+}
 a {
   text-decoration: none;
   color: inherit;
