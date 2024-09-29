@@ -1,0 +1,27 @@
+
+@media (max-width: 375px) {
+    .nav-list{
+        display: none !important;
+    }
+    .campo-formulario input, textarea {
+        width: 100% !important;
+
+    }
+
+    .form-btn{
+        width: 50% !important;
+        background-color: $clr-blue !important;
+    }
+    .quien-soy-inner{
+        grid-template-columns: 1fr 2fr 1fr !important;
+        grid-template-rows:     .5fr .5fr 1fr 1fr!important;
+        grid-template-areas: 
+            " . foto .          "
+            "titulo   titulo titulo"
+            " texto texto texto"
+            "texto texto texto" !important;
+            .btn{
+                display: none !important;
+            }
+    }
+}
