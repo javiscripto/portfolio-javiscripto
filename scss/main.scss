@@ -142,19 +142,21 @@ header {
     }
 
     .menu {
-        position: relative;
-        display: none;
-
         &-icon {
-            position: absolute;
-            top: 0;
-            right: 0;
+            cursor: pointer;
+            position: fixed;
+            top: 5vh;
+            right: 32px;
+            width: 32px;
+            height: 32px;
+            visibility: hidden;
         }
     }
 }
 
 #progress-bar {
     position: absolute;
+    z-index: 9;
     appearance: none;
     bottom: -4px;
     left: 0;

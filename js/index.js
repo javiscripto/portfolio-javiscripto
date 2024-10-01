@@ -71,4 +71,12 @@ document.addEventListener("DOMContentLoaded", () => {
         progressBar.value = progress;
     });
 
+    //evento para manejo de botón de menu
+
+    const menuIcon= document.querySelector(".menu-icon");
+    const menuContent= document.querySelector(".nav-list");
+    menuIcon.addEventListener("click", ()=>{
+        menuContent.classList.toggle("show-list")
+    })
+
 });
