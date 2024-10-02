@@ -12,10 +12,10 @@
             transition: visibility 0.9s ease, opacity 0.7s ease, translate .5s ease; 
             opacity: 0;
             position: absolute;
-            z-index: 10;
+            z-index: 9 !important;
             height: 80vh;
             width: 50vw;
-            background-color: rgba($clr-orange, 0.7);
+            background-color: rgba($clr-orange, 0.89);
             backdrop-filter: blur(10px);
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 0 0 0 16px;
@@ -38,6 +38,31 @@
             fill: $clr-grey;
         }
     }
+
+    //prueba de icono customm 
+    .close{
+        visibility: visible !important;
+        z-index: 11 !important;
+
+    }
+    .open{
+        visibility: visible !important;
+        div:first-child{
+            transform: rotate(45deg);
+                width: 46px; ; 
+        }
+        div:last-child{
+            transform: rotate(-45deg);
+                width:  46px;;
+        }
+        div:nth-child(2){
+            opacity: 0;
+        }
+    }
+
+
+
+
     .campo-formulario input, textarea {
         width: 100% !important;
 

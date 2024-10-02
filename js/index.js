@@ -73,10 +73,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
     //evento para manejo de botón de menu
 
-    const menuIcon= document.querySelector(".menu-icon");
+ /*    const menuIcon= document.querySelector(".menu-icon");
     const menuContent= document.querySelector(".nav-list");
     menuIcon.addEventListener("click", ()=>{
         menuContent.classList.toggle("show-list")
-    })
+    }) */
+   const closed= document.querySelector(".close");
+   const menuContent=document.querySelector(".nav-list");
+
+   closed.addEventListener("click", (e)=>{
+        closed.classList.toggle("open")
+        menuContent.classList.toggle("show-list")
+
+   })
 
 });
