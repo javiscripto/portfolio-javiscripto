@@ -18,6 +18,8 @@
     position: fixed;
     top: 0;
     right: 50%;
+    overflow: hidden;
+    overflow-x: hidden;
   }
   .nav-menu .nav-list {
     visibility: hidden;
@@ -35,12 +37,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    transform: translate(1000px);
   }
   .nav-menu .show-list {
     visibility: visible;
     opacity: 1;
-    transform: translate(0px);
   }
   .menu-icon {
     visibility: visible !important;
@@ -230,7 +230,7 @@ header .menu .close div {
   transition: 0.45s ease-in-out;
 }
 .quien-soy-inner .btn:hover {
-  background-color: #19767d;
+  background-color: rgb(25.3731343284, 117.9104477612, 124.6268656716);
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
@@ -383,7 +383,7 @@ header .menu .close div {
   width: 10%;
 }
 .formulario-contacto .form-btn:hover {
-  background-color: #19767d;
+  background-color: rgb(25.3731343284, 117.9104477612, 124.6268656716);
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
