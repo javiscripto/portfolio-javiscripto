@@ -78,13 +78,19 @@ document.addEventListener("DOMContentLoaded", () => {
     menuIcon.addEventListener("click", ()=>{
         menuContent.classList.toggle("show-list")
     }) */
-   const closed= document.querySelector(".close");
-   const menuContent=document.querySelector(".nav-list");
+   const closed = document.querySelector(".close");
+   const menuContent = document.querySelector(".nav-list");
 
-   closed.addEventListener("click", (e)=>{
-        closed.classList.toggle("open")
-        menuContent.classList.toggle("show-list")
+   closed.addEventListener("click", (e) => {
+        closed.classList.toggle("open");
+        menuContent.classList.toggle("show-list");
+   });
 
-   })
+   document.addEventListener("click", (e) => {
+        if (!menuContent.contains(e.target) && !closed.contains(e.target)) {
+            closed.classList.remove("open");
+            menuContent.classList.remove("show-list");
+        }
+   });
 
 });
