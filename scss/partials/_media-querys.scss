@@ -1,5 +1,8 @@
 
 @media (max-width: 600px) {
+    header{
+        position: sticky;
+    }
     .nav-menu{
         position: fixed;
         top: 0;
