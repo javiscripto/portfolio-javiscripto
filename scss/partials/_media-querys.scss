@@ -52,11 +52,11 @@
         visibility: visible !important;
         div:first-child{
             transform: rotate(45deg);
-                width: 46px; ; 
+                width: 35px !important; ; 
         }
         div:last-child{
             transform: rotate(-45deg);
-                width:  46px;;
+                width:  35px !important;;
         }
         div:nth-child(2){
             opacity: 0;

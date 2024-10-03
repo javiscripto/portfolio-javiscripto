@@ -59,11 +59,11 @@
   }
   .open div:first-child {
     transform: rotate(45deg);
-    width: 46px;
+    width: 35px !important;
   }
   .open div:last-child {
     transform: rotate(-45deg);
-    width: 46px;
+    width: 35px !important;
   }
   .open div:nth-child(2) {
     opacity: 0;
