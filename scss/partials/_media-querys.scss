@@ -3,9 +3,11 @@
     .nav-menu{
         position: fixed;
         top: 0;
-        right: 50%;
+        right: 0;
         overflow: hidden;
         overflow-x: hidden;
+        height: 80vh;
+        width: 50vw;
         
     
 
@@ -34,14 +36,14 @@
         }
     }
     .menu{
-        &-icon{
-            visibility: visible !important;
-            fill: $clr-grey;
-        }
+        z-index: 99;
+        position: relative;
     }
 
     //prueba de icono customm 
     .close{
+        position: absolute;
+        right: -10px;
         visibility: visible !important;
         z-index: 11 !important;
 

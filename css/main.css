@@ -17,9 +17,11 @@
   .nav-menu {
     position: fixed;
     top: 0;
-    right: 50%;
+    right: 0;
     overflow: hidden;
     overflow-x: hidden;
+    height: 80vh;
+    width: 50vw;
   }
   .nav-menu .nav-list {
     visibility: hidden;
@@ -42,11 +44,13 @@
     visibility: visible;
     opacity: 1;
   }
-  .menu-icon {
-    visibility: visible !important;
-    fill: #9a8195;
+  .menu {
+    z-index: 99;
+    position: relative;
   }
   .close {
+    position: absolute;
+    right: -10px;
     visibility: visible !important;
     z-index: 11 !important;
   }
@@ -156,15 +160,6 @@ header .nav-list .nav-item .toggle-container .toggle-btn {
 }
 header .nav-list .nav-item .toggle-container .toggle-btn span:hover {
   color: #229ea7;
-}
-header .menu-icon {
-  cursor: pointer;
-  position: fixed;
-  top: 5vh;
-  right: 32px;
-  width: 32px;
-  height: 32px;
-  visibility: hidden;
 }
 header .menu .close {
   visibility: hidden;
