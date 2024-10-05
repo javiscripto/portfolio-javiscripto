@@ -93,4 +93,26 @@ document.addEventListener("DOMContentLoaded", () => {
         }
    });
 
+   //--------------- evento para mostrar imagenes certiificados- proyectos  ---------
+
+   const imgContainer = document.querySelector(".light-box");
+   const imgs = document.querySelectorAll(".image");
+   
+   imgs.forEach(img=>{
+    img.addEventListener("click", ()=>{
+        imgContainer.classList.toggle("visible")
+        imgContainer.innerHTML=`
+            <img src="${img.getAttribute("src")}" />
+        `
+    })
+   });
+
+
+   //evento para cerrar la vista de la imagen
+   imgContainer.addEventListener("click",()=>{
+    imgContainer.classList.remove("visible")
+   });
+
+
+
 });

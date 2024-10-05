@@ -1,5 +1,12 @@
 
 @media (max-width: 600px) {
+
+    .light-box{
+        img{
+            width: 80% !important;
+        }
+    }
+
     header{
         position: sticky;
     }
