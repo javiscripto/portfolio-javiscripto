@@ -231,7 +231,7 @@ header .menu .close div {
   transition: 0.45s ease-in-out;
 }
 .quien-soy-inner .btn:hover {
-  background-color: rgb(25.3731343284, 117.9104477612, 124.6268656716);
+  background-color: #19767d;
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
@@ -282,7 +282,6 @@ header .menu .close div {
 
 .flex-galery {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
   padding: 2rem;
@@ -293,10 +292,38 @@ header .menu .close div {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  padding: 2rem;
+  border: 2px solid rgba(34, 158, 167, 0.5);
+  border-radius: 8px;
+  box-shadow: 8px 8px 15px rgba(34, 158, 167, 0.1);
 }
-.flex-galery .flex-card img {
-  width: 60%;
+.flex-galery .flex-card .img-container {
+  width: 70%;
   cursor: pointer;
+  align-self: center;
+  position: relative;
+}
+.flex-galery .flex-card .img-container img {
+  width: 100%;
+}
+.flex-galery .flex-card .img-container::after {
+  content: "ver certificado";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  padding: 1.5rem;
+  backdrop-filter: blur(10px);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease-in;
+}
+.flex-galery .flex-card .img-container:hover::after {
+  opacity: 1;
+}
+.flex-galery .flex-card p {
+  flex-grow: 1;
 }
 
 .light-box {
@@ -410,7 +437,7 @@ header .menu .close div {
   width: 10%;
 }
 .formulario-contacto .form-btn:hover {
-  background-color: rgb(25.3731343284, 117.9104477612, 124.6268656716);
+  background-color: #19767d;
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
