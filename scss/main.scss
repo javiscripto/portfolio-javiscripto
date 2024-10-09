@@ -24,6 +24,7 @@ $clr-grey: #9a8195;
 /* variable de texto */
 $font-title: "Poppins", sans-serif;
 @import './partials/media-querys';
+@import "./partials/galery";
 
 
 
@@ -275,7 +276,7 @@ header {
         display: flex;
         flex-direction: column;
         gap: .5rem;
-        padding: 2rem;
+        padding: 1rem;
         border: 2px solid rgba($color: $clr-blue, $alpha: .5);
         border-radius: 8px;
         box-shadow: 8px 8px  15px rgba($color: $clr-blue, $alpha: .1);
@@ -341,7 +342,7 @@ header {
     justify-content: center;
     align-items: center;
     img{
-        width: 60%;
+        width: 80%;
         
     }
 

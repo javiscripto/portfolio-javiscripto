@@ -1,0 +1,32 @@
+.grid-galery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 32px;
+    padding: 20px;
+    
+    .grid-card {
+        border: 2px solid rgba($color: $clr-blue, $alpha: .5);
+        box-shadow: 8px 8px  15px rgba($color: $clr-blue, $alpha: .1);
+        border-radius: 8px;
+        padding: 16px;
+        text-align: center;
+        
+        .grid-img {
+            width: 100%;
+            height: 150px;
+            background-color: #ccc;
+            margin-bottom: 16px;
+            border-radius: 8px;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            margin-bottom: 8px;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #666;
+        }
+    }
+}

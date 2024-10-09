@@ -74,7 +74,7 @@
     }
 
     .flex-card{
-        width: 500px !important;
+        width: 600px !important;
     }
 
 
@@ -107,17 +107,21 @@
         padding: .5rem !important;
 
         .flex-card{
-            width: 400px !important;
+            width: 500px !important;
             .img-container{
-                width: 100% !important;
+                //width: 100% !important;
 
                 &::after{
                     padding: .5rem !important;
-                    text-align: start !important;
-                    width: 60% !important;
+                    display: flex;
+                    //text-align: center !important;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100% !important;
                     height: 100% !important;
                     opacity: 1 !important;
-                    backdrop-filter: sepia(90%)!important;
+                    background-color: rgba($color: $clr-blue, $alpha: .4);
+                    backdrop-filter: sepia(10%)!important;
                 }
             }
         }
