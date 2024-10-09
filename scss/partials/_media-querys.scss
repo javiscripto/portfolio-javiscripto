@@ -73,7 +73,9 @@
         }
     }
 
-
+    .flex-card{
+        width: 500px !important;
+    }
 
 
     .campo-formulario input, textarea {
@@ -99,3 +101,16 @@
     }
 }
 
+@media(max-width:720px){
+    .flex-galery{
+        gap: .5rem !important;
+        padding: .5rem !important;
+
+        .flex-card{
+            width: 400px !important;
+            .img-container{
+                width: 100% !important;
+            }
+        }
+    }
+}

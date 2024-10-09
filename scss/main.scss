@@ -224,6 +224,7 @@ header {
         grid-area: foto;
         position: relative;
         height: 100%;
+        width: auto;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -231,10 +232,10 @@ header {
         &::before {
             content: "";
             position: absolute;
-            top: 0;
+            top:25%;
             left: 10%;
             width: 80%;
-            height: 90%;
+            height: 65%;
             background-color: $clr-orange;
             border-radius: 32px;
             z-index: -1;
@@ -242,7 +243,7 @@ header {
 
         img {
             width: 80%;
-            border-radius: 1%;
+            border-radius: 10%;
         }
     }
 
@@ -265,8 +266,8 @@ header {
 .flex-galery {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
-    padding: 2rem;
+    gap: 1.5rem;
+    padding: 1rem;
 
     .flex-card {
         margin: 1rem;
@@ -288,6 +289,9 @@ header {
             }
             &::after{
                 content: "ver certificado";
+                color: $clr-orange;
+                font-weight: bolder;
+                text-align: center;
                 position: absolute;
                 width: 100%;
                 height: 100%;
