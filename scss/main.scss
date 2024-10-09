@@ -279,6 +279,10 @@ header {
         border: 2px solid rgba($color: $clr-blue, $alpha: .5);
         border-radius: 8px;
         box-shadow: 8px 8px  15px rgba($color: $clr-blue, $alpha: .1);
+        &:hover{
+            transition: transform .4s ease;
+            transform: translateY(-8px);
+        }
         .img-container{
             width: 70%;
             cursor: pointer;
@@ -286,9 +290,13 @@ header {
             position: relative;
             img{
                 width: 100%;
+                border-radius: 8px;
+                filter: blur(1px) !important;
+
             }
             &::after{
                 content: "ver certificado";
+                border-radius: 16px;
                 color: $clr-orange;
                 font-weight: bolder;
                 text-align: center;
@@ -298,7 +306,7 @@ header {
                 left: 0;
                 top: 0;
                 padding: 1.5rem;
-                backdrop-filter: blur(10px);
+                backdrop-filter: invert(60%);
                 pointer-events: none;
                 opacity: 0;
                 transition: opacity .2s ease-in;

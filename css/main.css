@@ -104,6 +104,13 @@
   .flex-galery .flex-card .img-container {
     width: 100% !important;
   }
+  .flex-galery .flex-card .img-container::after {
+    text-align: start !important;
+    width: 60% !important;
+    height: 100% !important;
+    opacity: 1 !important;
+    backdrop-filter: sepia(90%) !important;
+  }
 }
 a {
   text-decoration: none;
@@ -313,6 +320,10 @@ header .menu .close div {
   border-radius: 8px;
   box-shadow: 8px 8px 15px rgba(34, 158, 167, 0.1);
 }
+.flex-galery .flex-card:hover {
+  transition: transform 0.4s ease;
+  transform: translateY(-8px);
+}
 .flex-galery .flex-card .img-container {
   width: 70%;
   cursor: pointer;
@@ -321,9 +332,12 @@ header .menu .close div {
 }
 .flex-galery .flex-card .img-container img {
   width: 100%;
+  border-radius: 8px;
+  filter: blur(1px) !important;
 }
 .flex-galery .flex-card .img-container::after {
   content: "ver certificado";
+  border-radius: 16px;
   color: #ffa61d;
   font-weight: bolder;
   text-align: center;
@@ -333,7 +347,7 @@ header .menu .close div {
   left: 0;
   top: 0;
   padding: 1.5rem;
-  backdrop-filter: blur(10px);
+  backdrop-filter: invert(60%);
   pointer-events: none;
   opacity: 0;
   transition: opacity 0.2s ease-in;

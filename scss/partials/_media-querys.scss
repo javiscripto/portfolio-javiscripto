@@ -110,7 +110,14 @@
             width: 400px !important;
             .img-container{
                 width: 100% !important;
-                
+
+                &::after{
+                    text-align: start !important;
+                    width: 60% !important;
+                    height: 100% !important;
+                    opacity: 1 !important;
+                    backdrop-filter: sepia(90%)!important;
+                }
             }
         }
     }
