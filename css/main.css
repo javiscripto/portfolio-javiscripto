@@ -105,6 +105,7 @@
     width: 100% !important;
   }
   .flex-galery .flex-card .img-container::after {
+    padding: 0.5rem !important;
     text-align: start !important;
     width: 60% !important;
     height: 100% !important;
