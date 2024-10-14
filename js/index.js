@@ -1,8 +1,9 @@
 //loader del sitio
 
 window.onload=()=>{
-    alert("se ha cargado el sitio");
-    
+    const loader= document.querySelector(".loader")
+    loader.innerHTML=""
+    loader.style.display="none"
 }
 
 
