@@ -1,3 +1,11 @@
+//loader del sitio
+
+window.onload=()=>{
+    alert("se ha cargado el sitio");
+    
+}
+
+
 document.addEventListener("DOMContentLoaded", () => {
     // manejador de tema oscuro-claro
     const body = document.getElementById("body");
