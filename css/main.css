@@ -283,7 +283,7 @@ header .menu .close div {
   transition: 0.45s ease-in-out;
 }
 .quien-soy-inner .btn:hover {
-  background-color: #19767d;
+  background-color: rgb(25.3731343284, 117.9104477612, 124.6268656716);
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
@@ -500,7 +500,7 @@ header .menu .close div {
   width: 10%;
 }
 .formulario-contacto .form-btn:hover {
-  background-color: #19767d;
+  background-color: rgb(25.3731343284, 117.9104477612, 124.6268656716);
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }

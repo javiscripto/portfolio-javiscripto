@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
    });
 
 
-   //evento para cerrar la vista de la imagen
+   // para cerrar la vista de la imagen
    imgContainer.addEventListener("click",()=>{
     imgContainer.classList.remove("visible")
    });
